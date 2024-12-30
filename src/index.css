@@ -1,0 +1,28 @@
+.bd-cyan-900 {
+    color: #fff;
+    background-color: #032830;
+}
+.bd-yellow-900 {
+    color: #fff;
+    background-color: #332701;
+}
+.bd-green-900 {
+    color: #fff;
+    background-color: #051b11;
+}
+.colorpalet div {
+    float: left;
+    /* padding: 10px; */
+    margin: 0 4px;
+    border: 1px solid white;
+    border-radius: 19px;
+}
+.colorpalet div.active {
+    border: 2px solid;
+}
+section.aboutection.py-10 {
+    padding-top: 40px;
+}
+section.textsection {
+    padding-top: 40px;
+}
