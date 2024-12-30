@@ -31,21 +31,19 @@ export default function Navbar({ title = 'Hello, world!', abouttitle, mode, togg
             </li>
 
           </ul>
+          <div className='d-flex'>
         { mode === 'dark' && (  <div className='colorpalet'>
             <div onClick={() => changeColor('#332701')} className={`p-2 bd-yellow-900 ${activeColor === '#332701' ? 'active' : ''}`}></div>
             <div onClick={() => changeColor('#051b11')} className={`p-2 bd-green-900 ${activeColor === '#051b11' ? 'active' : ''}`}></div>
             <div onClick={() => changeColor('#032830')} className={`p-2 bd-cyan-900 ${activeColor === '#032830' ? 'active' : ''}`}></div>
           </div>)
         }
-
-          <div className={`form-check form-switch text-${mode === 'light' ? 'dark' : 'light'}`}>
+</div>
+          <div className={`d-flex form-check form-switch text-${mode === 'light' ? 'dark' : 'light'}`}>
             <input onClick={toggleMode} className="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" />
             <label className="form-check-label" htmlFor="flexSwitchCheckDefault">Enable {mode} Mode</label>
           </div>
-          <form className="d-flex" role="search">
-            <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
-            <button className="btn btn-success" type="submit">Search</button>
-          </form>
+         
         </div>
       </div>
     </nav>
