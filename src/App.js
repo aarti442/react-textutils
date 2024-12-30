@@ -43,7 +43,7 @@ function App() {
         />
         <Route path="/about" element={<About mode={mode} colorpalet={colorpalet} />} />
       </Routes>
- 
+      <Textform heading="Enter your details" mode={mode} activeColor={activeColor} />
     </Router>
   );
 }
